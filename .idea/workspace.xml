@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the Option.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Add the detail method All data , ID, Name , number.">
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666009027970</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add the detail method All data , ID, Name , number.">
+      <created>1666018787972</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666018787972</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +178,7 @@
     <MESSAGE value="Change the Delete file." />
     <MESSAGE value="Change the code." />
     <MESSAGE value="Change the Option." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the Option." />
+    <MESSAGE value="Add the detail method All data , ID, Name , number." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the detail method All data , ID, Name , number." />
   </component>
 </project>
