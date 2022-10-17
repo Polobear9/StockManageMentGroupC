@@ -22,8 +22,6 @@ public class Delete {
                 case 4:
                     System.out.println("4. Delete By NUMBER");
                     break;
-                default:
-                    System.out.println("default");
             }
             break;
         }
