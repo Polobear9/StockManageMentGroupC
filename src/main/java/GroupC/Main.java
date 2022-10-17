@@ -1,7 +1,8 @@
 package GroupC;
+import Delete.*;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Delete.delete();
     }
 }

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Create the Test Folder and Test Files.">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Add the menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665843743190</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add the menu">
+      <created>1665972749208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665972749208</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +126,7 @@
     <MESSAGE value="Make a File for project" />
     <MESSAGE value="Add All CRUD File and Folder." />
     <MESSAGE value="Create the Test Folder and Test Files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create the Test Folder and Test Files." />
+    <MESSAGE value="Add the menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the menu" />
   </component>
 </project>
