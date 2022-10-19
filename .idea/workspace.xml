@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Add the comment for explain how this class be work.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" afterDir="false" />
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Create the Switch sentence in SystemUi class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666019170614</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Change the data type in Delete Method.">
+      <created>1666141781163</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666141781163</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create the Switch sentence in SystemUi class.">
+      <created>1666141975393</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666141975393</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +204,8 @@
     <MESSAGE value="Change the Option." />
     <MESSAGE value="Add the detail method All data , ID, Name , number." />
     <MESSAGE value="Add the comment for explain how this class be work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the comment for explain how this class be work." />
+    <MESSAGE value="Change the data type in Delete Method." />
+    <MESSAGE value="Create the Switch sentence in SystemUi class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create the Switch sentence in SystemUi class." />
   </component>
 </project>
