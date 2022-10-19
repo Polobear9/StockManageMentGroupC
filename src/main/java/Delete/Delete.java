@@ -13,24 +13,24 @@ public class Delete {
 
     public static void delete() {
         Scanner sc = new Scanner(System.in);
-        int menuNumber;
+        String menuNumber;
 
         while (true) {
             menuNumber = Delete.Menu(sc);
             switch (menuNumber) {
-                case 1:
+                case "1":
                     System.out.println("1. Delete All DataBase");
                     delete_AllData();
                     break;
-                case 2:
+                case "2":
                     System.out.println("2. Delete By ID");
                     delete_ById();
                     break;
-                case 3:
+                case "3":
                     System.out.println("3. Delete By NAME");
                     delete_ByName();
                     break;
-                case 4:
+                case "4":
                     System.out.println("4. Delete By NUMBER");
                     delete_ByNumber();
                     break;
@@ -40,7 +40,7 @@ public class Delete {
 
     }
 
-    private static int Menu(Scanner sc) {
+    private static String Menu(Scanner sc) {
         System.out.println(" -------------------------------- ");
         System.out.println("Delete Menu");
         System.out.println("1. Delete All");
@@ -48,7 +48,7 @@ public class Delete {
         System.out.println("3. Delete NAME");
         System.out.println("4. Delete NUMBER");
         System.out.println(" -------------------------------- ");
-        return sc.nextInt();
+        return sc.nextLine();
     }
 
     private static void delete_AllData() {
@@ -67,4 +67,8 @@ public class Delete {
         System.out.println("delete_ByNumber");
     }
 
+    private static boolean isItemIn() {
+
+        return false;
+    }
 }
