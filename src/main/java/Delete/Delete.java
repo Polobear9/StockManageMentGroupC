@@ -17,7 +17,7 @@ public class Delete {
             Scanner sc = new Scanner(System.in);
             select_DeleteMenu(Menu(sc));
         }
-        menu_Status = true;
+        menu_Status = true; // make a menu_status value --> true for next Time.
     }
 
     private static void select_DeleteMenu(String menuNumber) {
@@ -30,14 +30,6 @@ public class Delete {
                 System.out.println("2. Delete By ID");
                 delete_ById();
                 break;
-            case "3":
-                System.out.println("3. Delete By NAME");
-                delete_ByName();
-                break;
-            case "4":
-                System.out.println("4. Delete By NUMBER");
-                delete_ByNumber();
-                break;
             case "0":
                 menu_Status = false;
                 break;
@@ -48,10 +40,7 @@ public class Delete {
         System.out.println(" -------------------------------- ");
         System.out.println("Delete Menu");
         System.out.println("1. Delete All");
-        System.out.println("2. Delete ID");
-        System.out.println("3. Delete NAME");
-        System.out.println("4. Delete NUMBER");
-        System.out.println("0. Delete Menu Finish");
+        System.out.println("2. Delete By ID");
         System.out.println(" -------------------------------- ");
         return sc.nextLine();
     }
@@ -62,13 +51,5 @@ public class Delete {
 
     private static void delete_ById() {
         System.out.println("delete_ById");
-    }
-
-    private static void delete_ByName() {
-        System.out.println("delete_ByName");
-    }
-
-    private static void delete_ByNumber() {
-        System.out.println("delete_ByNumber");
     }
 }

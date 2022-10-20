@@ -32,9 +32,11 @@ public class SystemUi {
                 break;
             case "2": //Add --> menu_Number == "2";
                 System.out.println("Add Menu");
+                Register.register();
                 break;
             case "3": //Change --> menu_Number == "3";
                 System.out.println("Change Menu");
+
                 break;
             case "4": //Delete --> menu_Number == "4";
                 System.out.println("Delete Menu");
