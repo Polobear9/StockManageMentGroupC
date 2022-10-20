@@ -15,7 +15,7 @@ public class SystemUi {
         while (true) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please Select the Menu");
-            System.out.println("[ãƒ¡ãƒ‹ãƒ¥ãƒ¼] 1:æ¤œç´¢ 2:ç™»éŒ² 3:å¤‰æ›´ 4:å‰Šé™¤ 0:çµ‚äº†>");
+            System.out.println("[ƒƒjƒ…[] 1:ŒŸõ 2:“o˜^ 3:•ÏX 4:íœ 0:I—¹>");
             String menu_Number = scanner.nextLine(); // nextLine is Protect by Exception.
             select_Menu(menu_Number);
         }

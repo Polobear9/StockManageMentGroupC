@@ -1,5 +1,7 @@
 package Delete;
 
+import Delete_System.DeleteById;
+
 import java.util.Scanner;
 
 public class Delete {
@@ -15,12 +17,12 @@ public class Delete {
     public static void delete() {
         while (menu_Status) {
             Scanner sc = new Scanner(System.in);
-            select_DeleteMenu(Menu(sc));
+            select_DeleteMenu(Menu(sc), sc);
         }
         menu_Status = true; // make a menu_status value --> true for next Time.
     }
 
-    private static void select_DeleteMenu(String menuNumber) {
+    private static void select_DeleteMenu(String menuNumber, Scanner sc) {
         switch (menuNumber) {
             case "1":
                 System.out.println("1. Delete All DataBase");
@@ -28,7 +30,8 @@ public class Delete {
                 break;
             case "2":
                 System.out.println("2. Delete By ID");
-                delete_ById();
+                sc.nextLine();
+                delete_ById(sc);
                 break;
             case "0":
                 menu_Status = false;
@@ -49,7 +52,7 @@ public class Delete {
         System.out.println("delete_AllData");
     }
 
-    private static void delete_ById() {
-        System.out.println("delete_ById");
+    private static void delete_ById(Scanner sc) {
+        DeleteById.serach_ById(sc);
     }
 }
