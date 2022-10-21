@@ -17,21 +17,20 @@ public class Delete {
     public static void delete() {
         while (menu_Status) {
             Scanner sc = new Scanner(System.in);
-            select_DeleteMenu(Menu(sc), sc);
+            select_DeleteMenu(sc);
         }
         menu_Status = true; // make a menu_status value --> true for next Time.
     }
 
-    private static void select_DeleteMenu(String menuNumber, Scanner sc) {
-        switch (menuNumber) {
+    private static void select_DeleteMenu(Scanner sc) {
+        switch (Menu(sc)) {
             case "1":
                 System.out.println("1. Delete All DataBase");
                 delete_AllData();
                 break;
             case "2":
                 System.out.println("2. Delete By ID");
-                sc.nextLine();
-                delete_ById(sc);
+                delete_ById();
                 break;
             case "0":
                 menu_Status = false;
@@ -52,7 +51,7 @@ public class Delete {
         System.out.println("delete_AllData");
     }
 
-    private static void delete_ById(Scanner sc) {
-        DeleteById.serach_ById(sc);
+    private static void delete_ById() {
+        DeleteById.serach_ById();
     }
 }

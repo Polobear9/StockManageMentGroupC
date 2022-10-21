@@ -11,11 +11,8 @@ the user wants to delete the product info from the database(our database is CSV 
 user most knows to delete the product ID from the database.
  */
 public class DeleteById {
-    public static void serach_ById(Scanner sc) {
-        String product_Id = sc.nextLine();
-        if (product_Id == null) {
-        } else {
-            System.out.println("something");
-        }
+    public static void serach_ById() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("something");
     }
 }
