@@ -1,6 +1,7 @@
 package Delete_System;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -16,23 +17,27 @@ public class DeleteById {
 
     public static void serach_ById(String keyword) {
         System.out.println("something");
-        String[] test_Array;
+        String test_Array;
+        String[] testA;
+        ArrayList<String> arrayRepository = new ArrayList<>();
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\c04.csv"), "Shift_JIS"));
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\lieam\\OneDrive\\문서\\test.csv"), "Shift_JIS"));
-            while ((test_Array = br.readLine().split(",")) != null) {
-                if (test_Array[0].equals(keyword)) {
-                    int i = 0;
-                    while (i < test_Array.length) {
-                        System.out.println(Arrays.toString(test_Array));
-                        bw.append(test_Array[i] + ",");
-                        i++;
-                    }
+            while ((test_Array = br.readLine()) != null) {
+                testA = test_Array.split(",");
+                if (testA[0].equals(keyword)) {
+                    arrayRepository.add(test_Array);
+                    System.out.println("logging");
+                    System.out.println(arrayRepository.size());
+                }
+                if (!testA[0].equals(keyword)) {
+                    bw.append(test_Array);
                     bw.newLine();
+                    System.out.println(test_Array);
                 }
             }
-            br.close();
             bw.close();
+            br.close();
 
         } catch (Exception e) {
         }
