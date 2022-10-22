@@ -1,9 +1,7 @@
 package Delete_System;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 /*
@@ -15,34 +13,43 @@ user most knows to delete the product ID from the database.
  */
 public class DeleteById {
     private static String keyword;
+    static ArrayList<String> arrayRepository = new ArrayList<>();
 
     public static void serach_ById(String keyword) {
         System.out.println("something");
         String test_Array;
         String[] testA;
-        ArrayList<String> arrayRepository = new ArrayList<>();
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\c04.csv"), "Shift_JIS"));
-            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\lieam\\OneDrive\\문서\\test.csv"), "Shift_JIS"));
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\lieam\\OneDrive\\바탕 화면\\Input.csv"), "Shift_JIS"));
+            int i = 0;
             while ((test_Array = br.readLine()) != null) {
                 testA = test_Array.split(",");
                 if (testA[0].equals(keyword)) {
                     arrayRepository.add(test_Array);
-                    System.out.println("logging");
-                    System.out.println(arrayRepository.size());
-                    System.out.println(test_Array);
-
-                }
-                if (!testA[0].equals(keyword)) {
-                    bw.append(test_Array);
-                    bw.newLine();
+                    System.out.println(arrayRepository.get(i));
+                    i++;
                 }
             }
-            bw.close();
             br.close();
-
         } catch (Exception e) {
-
+        } finally {
+            int i = 0;
+            try {
+                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\lieam\\OneDrive\\바탕 화면\\Input.csv", false), "Shift_JIS"));
+                while (i < arrayRepository.size()) {
+                    System.out.println(arrayRepository);
+                    bw.append(arrayRepository.get(i));
+                    bw.newLine();
+                    i++;
+                }
+                bw.close();
+            } catch (UnsupportedEncodingException ex) {
+                throw new RuntimeException(ex);
+            } catch (FileNotFoundException ex) {
+                throw new RuntimeException(ex);
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
         }
     }
 }

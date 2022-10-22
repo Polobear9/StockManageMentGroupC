@@ -8,7 +8,7 @@ public class Delete_All {
         System.out.println("something");
         String[] test_Array;
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\c04.csv"), "Shift_JIS"));
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\Users\\lieam\\OneDrive\\바탕 화면\\Input.csv"), "Shift_JIS"));
             while ((test_Array = br.readLine().split(",")) != null) {
                 System.out.println(Arrays.toString(test_Array));
             }
