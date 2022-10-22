@@ -9,9 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Add the DeleteById class info and comment, and method.">
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the method.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/Delete_All.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/Delete_All.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666277031727</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Change the method.">
+      <created>1666364070411</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666364070411</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +238,7 @@
     <MESSAGE value="Add the method and make a code be simple and fix the problem." />
     <MESSAGE value="Add the Class for System." />
     <MESSAGE value="Add the DeleteById class info and comment, and method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the DeleteById class info and comment, and method." />
+    <MESSAGE value="Change the method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the method." />
   </component>
 </project>

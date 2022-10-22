@@ -1,5 +1,8 @@
 package Delete_System;
 
+import java.io.*;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -14,5 +17,21 @@ public class DeleteById {
     public static void serach_ById() {
         Scanner sc = new Scanner(System.in);
         System.out.println("something");
+        String test;
+        String[] test_Array;
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\c03.csv"), "UTF-8"));
+            while((test_Array = br.readLine().split(",")) != null){
+                if(test_Array[0].equals("47")){
+                    System.out.println(Arrays.toString(test_Array));
+                }
+
+            }
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

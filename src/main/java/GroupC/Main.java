@@ -1,7 +1,9 @@
 package GroupC;
 
+import Delete_System.DeleteById;
+
 public class Main {
     public static void main(String[] args) {
-        SystemUi.start_System();
+        DeleteById.serach_ById();
     }
 }
