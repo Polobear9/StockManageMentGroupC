@@ -22,8 +22,12 @@ public class DeleteById {
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\lieam\\OneDrive\\문서\\test.csv"), "Shift_JIS"));
             while ((test_Array = br.readLine().split(",")) != null) {
                 if (test_Array[0].equals(keyword)) {
-                    System.out.println(Arrays.toString(test_Array));
-                    bw.append(Arrays.toString(test_Array));
+                    int i = 0;
+                    while (i < test_Array.length) {
+                        System.out.println(Arrays.toString(test_Array));
+                        bw.append(test_Array[i] + ",");
+                        i++;
+                    }
                     bw.newLine();
                 }
             }
