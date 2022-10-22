@@ -20,7 +20,7 @@ public class DeleteById {
         String test;
         String[] test_Array;
         try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\c03.csv"), "UTF-8"));
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\c04.csv"), "Shift_JIS"));
             while((test_Array = br.readLine().split(",")) != null){
                 if(test_Array[0].equals("47")){
                     System.out.println(Arrays.toString(test_Array));
