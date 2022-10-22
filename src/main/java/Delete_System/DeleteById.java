@@ -1,9 +1,7 @@
 package Delete_System;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Scanner;
 
 
 /*
@@ -14,24 +12,25 @@ the user wants to delete the product info from the database(our database is CSV 
 user most knows to delete the product ID from the database.
  */
 public class DeleteById {
-    public static void serach_ById() {
-        Scanner sc = new Scanner(System.in);
+    private static String keyword;
+
+    public static void serach_ById(String keyword) {
         System.out.println("something");
-        String test;
         String[] test_Array;
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\c04.csv"), "Shift_JIS"));
-            while((test_Array = br.readLine().split(",")) != null){
-                if(test_Array[0].equals("47")){
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("C:\\Users\\lieam\\OneDrive\\문서\\test.csv"), "Shift_JIS"));
+            while ((test_Array = br.readLine().split(",")) != null) {
+                if (test_Array[0].equals(keyword)) {
                     System.out.println(Arrays.toString(test_Array));
+                    bw.append(Arrays.toString(test_Array));
+                    bw.newLine();
                 }
-
             }
+            br.close();
+            bw.close();
 
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (Exception e) {
         }
     }
 }

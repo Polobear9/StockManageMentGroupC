@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the method.">
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Fix Error file path is changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666364070411</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix Error file path is changed">
+      <created>1666437286876</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666437286876</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,6 +245,7 @@
     <MESSAGE value="Add the Class for System." />
     <MESSAGE value="Add the DeleteById class info and comment, and method." />
     <MESSAGE value="Change the method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the method." />
+    <MESSAGE value="Fix Error file path is changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Error file path is changed" />
   </component>
 </project>

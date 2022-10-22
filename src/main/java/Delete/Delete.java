@@ -1,8 +1,6 @@
 package Delete;
 
 import Delete_System.DeleteById;
-import Delete_System.Delete_All;
-
 import java.util.Scanner;
 
 public class Delete {
@@ -19,7 +17,8 @@ public class Delete {
         while (menu_Status) {
             Scanner sc = new Scanner(System.in);
             Menu();
-            delete_ById();
+            String keyword = sc.nextLine();
+            delete_ById(keyword);
             break;
         }
         menu_Status = true; // make a menu_status value --> true for next Time.
@@ -28,10 +27,11 @@ public class Delete {
     private static void Menu() {
         System.out.println(" -------------------------------- ");
         System.out.println("Delete Menu");
+        System.out.println("Please enter the Keyword for search");
         System.out.println(" -------------------------------- ");
     }
 
-    private static void delete_ById() {
-        DeleteById.serach_ById();
+    private static void delete_ById(String keyword) {
+        DeleteById.serach_ById(keyword);
     }
 }
