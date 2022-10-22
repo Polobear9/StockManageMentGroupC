@@ -1,6 +1,7 @@
 package Delete_System;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -29,17 +30,19 @@ public class DeleteById {
                     arrayRepository.add(test_Array);
                     System.out.println("logging");
                     System.out.println(arrayRepository.size());
+                    System.out.println(test_Array);
+
                 }
                 if (!testA[0].equals(keyword)) {
                     bw.append(test_Array);
                     bw.newLine();
-                    System.out.println(test_Array);
                 }
             }
             bw.close();
             br.close();
 
         } catch (Exception e) {
+
         }
     }
 }

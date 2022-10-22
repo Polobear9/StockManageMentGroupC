@@ -21,9 +21,23 @@ public class Delete {
             Menu();
             String keyword = sc.nextLine();
             delete_ById(keyword);
-            break;
+            menu_Status = choose();
         }
         menu_Status = true; // make a menu_status value --> true for next Time.
+    }
+
+    private static boolean choose() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("continue??");
+        String select = sc.nextLine();
+        boolean judge = true;
+        if(select.equals("1")){
+            judge = true;
+        }
+        if(select.equals("2")){
+            judge = false;
+        }
+        return judge;
     }
 
     private static void Menu() {
