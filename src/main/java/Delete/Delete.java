@@ -1,7 +1,6 @@
 package Delete;
 
 import Delete_System.DeleteById;
-import Delete_System.Delete_All;
 
 import java.util.Scanner;
 
@@ -48,9 +47,6 @@ public class Delete {
     }
 
     private static void delete_ById(String keyword) {
-        if(keyword.length() == 0){
-            Delete_All.readAndDelete();
-        }
-        DeleteById.serach_ById(keyword);
+        DeleteById.search_By_Id(keyword);
     }
 }
