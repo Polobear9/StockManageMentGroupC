@@ -26,13 +26,7 @@ public class Register {
 
 	private Register() {}
 
-	//キーボード入力で受け取った値を返す
-	//		public static String getKeyboardInput() {
-	//			return new Scanner(System.in).next();
-	//		}
-
 	public static void register() throws IOException {
-		//キーボード入力で受け取った値get()を返す
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("商品情報を登録します。");
@@ -74,7 +68,7 @@ public class Register {
 											+ sellingPrice + ","
 											+ purchasePrice + ","
 											+ registrationDate);
-									
+									bw.newLine();
 									bw.close();
 									break a; 
 								}
@@ -82,18 +76,6 @@ public class Register {
 						}catch (IOException e) {
 							System.out.println(e.getMessage());
 						}
-
-						//					String sql = "INSERT INTO products VALUES('"
-						//							+ productId + "','"
-						//							+ productCode + "','"
-						//							+ productName + "','"
-						//							+ produCategory + "',"
-						//							+ sellingPrice + ","
-						//							+ purchasePrice + ",'"
-						//							+ registrationDate + "')";
-						//					//INSERT文確認用
-						//					System.out.println(sql);
-
 					}
 					br.close();
 					System.out.println("商品を登録しました");
