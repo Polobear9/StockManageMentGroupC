@@ -27,7 +27,7 @@ public class Delete {
 
     private static boolean choose_Continue() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("continue??");
+        System.out.println("continue?? 1.Yes 2.Stop");
         String select = sc.nextLine();
         boolean judge = !select.equals("2");
         return judge;

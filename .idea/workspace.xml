@@ -9,13 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the code be simple and Clean">
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sampleData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sampleData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Update/FileChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Update/FileChange.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666595046049</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Change the code.">
+      <created>1666613238113</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666613238113</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,7 +333,6 @@
     <MESSAGE value="Add the menu" />
     <MESSAGE value="Add the menu for Delete Class." />
     <MESSAGE value="Change the Delete file." />
-    <MESSAGE value="Change the code." />
     <MESSAGE value="Change the Option." />
     <MESSAGE value="Add the detail method All data , ID, Name , number." />
     <MESSAGE value="Add the comment for explain how this class be work." />
@@ -350,6 +353,7 @@
     <MESSAGE value="Clean up te code." />
     <MESSAGE value="Add the csvFile." />
     <MESSAGE value="Change the code be simple and Clean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the code be simple and Clean" />
+    <MESSAGE value="Change the code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the code." />
   </component>
 </project>

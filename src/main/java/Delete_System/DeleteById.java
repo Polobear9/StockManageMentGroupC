@@ -15,8 +15,8 @@ the user wants to delete the product info from the database(our database is Syst
 user most knows to delete the product ID from the database.
  */
 public class DeleteById {
-    private static final ArrayList<String> saveDataRepository = new ArrayList<>();
-    private static final ArrayList<String> deleteDataRepository = new ArrayList<>();
+    private static final ArrayList<String> saveDataRepository = new ArrayList<>(); //savaData will be saved in saveDataRepository
+    private static final ArrayList<String> deleteDataRepository = new ArrayList<>(); //deleteData will  be saved in deleteDataRepository
     private static final Scanner sc = new Scanner(System.in);
 
     public static void search_By_Id(String delete_Keyword) {
@@ -33,17 +33,7 @@ public class DeleteById {
                 }
                 saveDataRepository.add(csvLineData); //Another data insert into saveDataRepository for Write in csv file.
             }
-            System.out.println("-----Up List Data is be Delete-----");
-            System.out.println("be Delete the data count : " + deleteDataRepository.size());
-            System.out.println("After delete, All data count : " + saveDataRepository.size());
-            System.out.println("num : 1 = yes");
-            String answer_Check = sc.nextLine();
-            if (answer_Check.equals("1")) {
-                csvLineData_Write(br);
-                clearRepository();
-            } else {
-                clearRepository();
-            }
+            select_DeleteTheData(br);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -58,15 +48,29 @@ public class DeleteById {
         int i = 0;
         try {
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(SystemUi.FILEPATH, false), "Shift_JIS"));
-            while (i < saveDataRepository.size()) {
-                System.out.println(saveDataRepository);
-                bw.append(saveDataRepository.get(i));
+            while (i < saveDataRepository.size()) { // savaDataRepository.size() <-- without deleteData count.
+                System.out.println(saveDataRepository.get(i)); // can see what of data will add in csv file.
+                bw.append(saveDataRepository.get(i)); // bw.append() and bw.newLine() should add the saveData in csv file.
                 bw.newLine();
                 i++;
             }
             bw.close();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
+        }
+    }
+
+    private static void select_DeleteTheData(BufferedReader br) {
+        System.out.println("-----Up List Data is be Delete-----");
+        System.out.println("be Delete the data count : " + deleteDataRepository.size());
+        System.out.println("After delete, All data count : " + saveDataRepository.size());
+        System.out.println("num : 1 = yes");
+        String answer_Check = sc.nextLine();
+        if (answer_Check.equals("1")) {
+            csvLineData_Write(br);
+            clearRepository();
+        } else {
+            clearRepository();
         }
     }
 
