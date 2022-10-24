@@ -1,6 +1,8 @@
 package GroupC;
 
+import Create.Register;
 import Delete.Delete;
+import Read.Method1;
 
 import java.util.Scanner;
 
@@ -13,26 +15,26 @@ public class SystemUi {
     @SuppressWarnings("InfiniteLoopStatement")
     public static void start_System() {
         while (true) {
-            Scanner scanner = new Scanner(System.in);
             System.out.println("Please Select the Menu");
-            System.out.println("test");
-            String menu_Number = scanner.nextLine(); // nextLine is Protect by Exception.
-            select_Menu(menu_Number);
+            System.out.println("1. Search , 2. Add , 3. Change , 4. Delete, 0. System stop.");
+            select_Menu();
         }
     }
 
-    private static void select_Menu(String menu_Number) {
+    private static void select_Menu() {
         /*
         Break sentence in switch statement make a return to start_System while statement.
         user can select the menu again when some menu was finished or user selected the To Menu.
          */
-        switch (menu_Number) {
+        Scanner sc = new Scanner(System.in);
+        switch (sc.nextLine()) {// nextLine is Protect by Exception.
             case "1": //Search --> menu_Number == "1";
                 System.out.println("Search Menu");
+                Method1.searchMain();
                 break;
             case "2": //Add --> menu_Number == "2";
                 System.out.println("Add Menu");
-                /*Register.register();*/
+                Register.register();
                 break;
             case "3": //Change --> menu_Number == "3";
                 System.out.println("Change Menu");

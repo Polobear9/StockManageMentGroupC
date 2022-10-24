@@ -14,8 +14,9 @@ user most knows to delete the product ID from the database.
  */
 public class DeleteById {
     private static String keyword;
-    static ArrayList<String> arrayRepository = new ArrayList<>();
-    static Scanner sc = new Scanner(System.in);
+    private static ArrayList<String> arrayRepository = new ArrayList<>();
+    private static ArrayList<String> deleteRepository = new ArrayList<>();
+    private static Scanner sc = new Scanner(System.in);
 
     public static void search_By_Id(String keyword) {
         System.out.println("Search ByID");
@@ -27,18 +28,27 @@ public class DeleteById {
             while ((test_Array = br.readLine()) != null) {
                 testA = test_Array.split(",");
                 if (testA[0].equals(keyword)) {
-                    arrayRepository.add(test_Array);
-                    System.out.println(arrayRepository.get(i));
+                    deleteRepository.add(test_Array);
                     i++;
+                    continue;
                 }
+                arrayRepository.add(test_Array);
             }
-            System.out.println("Delete?");
-            System.out.print(arrayRepository.size());
+            System.out.println("-----Up List Data is be Delete-----");
+            System.out.println("be Delete the data count : " + deleteRepository.size());
+            System.out.println("After delete, All data count : " + arrayRepository.size());
+            System.out.println("num : 1 = yes");
             String answer_Check = sc.nextLine();
             if (answer_Check.equals("1")) {
                 delete_Check(br);
+                arrayRepository.clear();
+                deleteRepository.clear();
+            }else{
+                arrayRepository.clear();
+                deleteRepository.clear();
             }
         } catch (Exception e) {
+
         }
     }
 
@@ -46,7 +56,6 @@ public class DeleteById {
         try {
             br.close();
         } catch (IOException e) {
-            throw new RuntimeException(e);
         }
         int i = 0;
         try {
@@ -58,12 +67,7 @@ public class DeleteById {
                 i++;
             }
             bw.close();
-        } catch (UnsupportedEncodingException ex) {
-            throw new RuntimeException(ex);
-        } catch (FileNotFoundException ex) {
-            throw new RuntimeException(ex);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
+        } catch (Exception ex) {
         }
     }
 }

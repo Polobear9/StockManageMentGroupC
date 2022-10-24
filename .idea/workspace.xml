@@ -9,8 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Success write in file useing the keyword.">
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the code and Delete the Delete_All.java file.">
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GroupC/resources/Input.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StockManageMentGroupC_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/StockManageMentGroupC_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Create/Create.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Create/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Create/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Read/Method1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Read/Method1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Read/Read.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +40,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -44,7 +59,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/StockManageMentGroupC&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lieam/Documents&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -53,10 +68,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lieam\Documents" />
+      <recent name="C:\Projects\StockManageMentGroupC" />
       <recent name="C:\Projects\StockManageMentGroupC\src\test\java" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\StockManageMentGroupC\src\main\java\GroupC\resources" />
+      <recent name="C:\Projects\StockManageMentGroupC" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GroupC.Main" />
       <module name="StockManageMentGroupC.main" />
@@ -70,8 +91,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StockManageMentGroupC.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/StockManageMentGroupC_jar/StockManageMentGroupC.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.StockManageMentGroupC.jar" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -218,7 +244,49 @@
       <option name="project" value="LOCAL" />
       <updated>1666439020686</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Change the logic the code for Add the File.">
+      <created>1666439498740</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666439498740</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Change the code and Add the if statement.">
+      <created>1666441700483</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666441700483</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Change the code for Edit.">
+      <created>1666446519575</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666446519575</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Change delete method.">
+      <created>1666448048799</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1666448048799</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Finish Delete Method.">
+      <created>1666453386008</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666453386008</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Change the code and Delete the Delete_All.java file.">
+      <created>1666509459773</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666509459773</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,6 +319,12 @@
     <MESSAGE value="Change the method." />
     <MESSAGE value="Fix Error file path is changed" />
     <MESSAGE value="Success write in file useing the keyword." />
-    <option name="LAST_COMMIT_MESSAGE" value="Success write in file useing the keyword." />
+    <MESSAGE value="Change the logic the code for Add the File." />
+    <MESSAGE value="Change the code and Add the if statement." />
+    <MESSAGE value="Change the code for Edit." />
+    <MESSAGE value="Change delete method." />
+    <MESSAGE value="Finish Delete Method." />
+    <MESSAGE value="Change the code and Delete the Delete_All.java file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the code and Delete the Delete_All.java file." />
   </component>
 </project>
