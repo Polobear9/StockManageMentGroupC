@@ -123,7 +123,7 @@ public class FileChange {
 					while ((output = bufferedReader.readLine()) != null) {
 						if (output.startsWith(input)) {
 							searchID = input;
-							inputs_inFile = output.split(",");
+							inputs_inFile = output.split(",",-1);
 							while ((output = bufferedReader.readLine()) != null) {
 								sbLast.append(output).append("\n");
 							}
@@ -158,7 +158,13 @@ public class FileChange {
 				if (halfwidth_check(getName())) {input_check() ; return ;}
 				if (byt_limit_check(getName(), getByt())) {input_check() ; return ;}
 				if (code_check()) {input_check() ; return ;}
-				inputs_inFile[Selection.indexOf(SHOHIN_CODE)] = input;
+				try {
+					inputs_inFile[Selection.indexOf(SHOHIN_CODE)] = input;
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+					
+				
 				selection_number++;
 			}
 		},
