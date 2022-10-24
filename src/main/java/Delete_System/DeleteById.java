@@ -4,7 +4,6 @@ import GroupC.SystemUi;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -19,9 +18,9 @@ public class DeleteById {
     private static final ArrayList<String> saveDataRepository = new ArrayList<>(); //savaData will be saved in saveDataRepository
     private static final ArrayList<String> deleteDataRepository = new ArrayList<>(); //deleteData will  be saved in deleteDataRepository
     private static final Scanner sc = new Scanner(System.in);
+    private static boolean isDataInIt = false;
 
     public static void search_By_Id(String delete_Keyword) {
-        System.out.println("Search ByID");
         String csvLineData;
         String[] csvLineData_Array;
         try {
@@ -34,9 +33,53 @@ public class DeleteById {
                 }
                 saveDataRepository.add(csvLineData); //Another data insert into saveDataRepository for Write in csv file.
             }
+            printDelete_Data();
             select_DeleteTheData(br);
         } catch (Exception e) {
             System.out.println(e.getMessage());
+        }
+    }
+
+    private static void printDelete_Data() {
+        if (deleteDataRepository.size() == 0) {
+            System.out.println("商品情報がデータベース上にございません。もう一度商品IDを確認してください。");
+            isDataInIt = false;
+        }
+        int i = 0;
+        while (i < deleteDataRepository.size()) {
+            isDataInIt = true;
+            String[] deleteData_Info = deleteDataRepository.get(i).split(",");
+            int printInfo_Number = 0;
+            a:
+            while (true) {
+                switch (printInfo_Number) {
+                    case 0:
+                        System.out.println("商品ID = " + deleteData_Info[printInfo_Number]);
+                        break;
+                    case 1:
+                        System.out.println("商品コード = " + deleteData_Info[printInfo_Number]);
+                        break;
+                    case 2:
+                        System.out.println("商品名 = " + deleteData_Info[printInfo_Number]);
+                        break;
+                    case 3:
+                        System.out.println("商品分類 = " + deleteData_Info[printInfo_Number]);
+                        break;
+                    case 4:
+                        System.out.println("販売単価 = " + deleteData_Info[printInfo_Number]);
+                        break;
+                    case 5:
+                        System.out.println("仕入価格 = " + deleteData_Info[printInfo_Number]);
+                        break;
+                    case 6:
+                        System.out.println("登録日 = " + deleteData_Info[printInfo_Number]);
+                        break;
+                    case 7:
+                        break a;
+                }
+                printInfo_Number++;
+            }
+            i++;
         }
     }
 
@@ -54,41 +97,6 @@ public class DeleteById {
                 bw.newLine();
                 i++;
             }
-            i = 0;
-            while (i < deleteDataRepository.size()) {
-                String[] deleteData_Info = deleteDataRepository.get(i).split(",");
-                int printInfo_Number = 0;
-                a:
-                while (true) {
-                    switch (printInfo_Number) {
-                        case 0:
-                            System.out.println("商品ID = " + deleteData_Info[printInfo_Number]);
-                            break;
-                        case 1:
-                            System.out.println("商品コード = " + deleteData_Info[printInfo_Number]);
-                            break;
-                        case 2:
-                            System.out.println("商品名 = " + deleteData_Info[printInfo_Number]);
-                            break;
-                        case 3:
-                            System.out.println("商品分類 = " + deleteData_Info[printInfo_Number]);
-                            break;
-                        case 4:
-                            System.out.println("販売単価 = " + deleteData_Info[printInfo_Number]);
-                            break;
-                        case 5:
-                            System.out.println("仕入価格 = " + deleteData_Info[printInfo_Number]);
-                            break;
-                        case 6:
-                            System.out.println("登録日 = " + deleteData_Info[printInfo_Number]);
-                            break;
-                        case 7:
-                            break a;
-                    }
-                    printInfo_Number++;
-                }
-                i++;
-            }
             bw.close();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -96,15 +104,18 @@ public class DeleteById {
     }
 
     private static void select_DeleteTheData(BufferedReader br) {
-        System.out.print("商品情報を削除しますか？ Y/N >");
-        String answer_Check = sc.nextLine();
-        if (answer_Check.equals("Y")) {
-            csvLineData_Write(br);
-            System.out.println("商品を削除しました。");
-            clearRepository();
-        } else {
-            clearRepository();
+        if (isDataInIt) {
+            System.out.print("商品情報を削除しますか？ Y/N >");
+            String answer_Check = sc.nextLine();
+            if (answer_Check.equals("Y")) {
+                csvLineData_Write(br);
+                System.out.println("商品を削除しました。");
+                clearRepository();
+            } else {
+                clearRepository();
+            }
         }
+        clearRepository();
     }
 
     private static void clearRepository() {

@@ -27,7 +27,7 @@ public class Delete {
 
     private static boolean choose_Continue() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("continue?? 1.Yes 2.Stop");
+        System.out.print("1:続けて削除する 2:メニューに戻る > ");
         String select = sc.nextLine();
         boolean judge = !select.equals("2");
         return judge;
@@ -35,8 +35,8 @@ public class Delete {
 
     private static void printDelete_Menu() {
         System.out.println(" -------------------------------- ");
-        System.out.println("Delete printDelete_Menu");
-        System.out.println("Please enter the delete_Keyword for search");
+        System.out.println("商品情報を削除します。");
+        System.out.println("削除する商品IDを入力してください。");
         System.out.println(" -------------------------------- ");
     }
 
