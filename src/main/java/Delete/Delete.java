@@ -8,7 +8,7 @@ public class Delete {
     private static boolean menu_Status = true;
 
 /*
-    Insert ID and check data from SQLite or CSV file.
+    Insert ID and check data from SQLite or SystemUi.FILEPATH file.
     print out to CLI --> User need to check for delete the Data.
     If user select the Delete Data. the Data will be deleted.
     If user select the Cancel, Need call the Method for check Data info.

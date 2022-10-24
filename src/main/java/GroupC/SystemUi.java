@@ -12,6 +12,9 @@ public class SystemUi {
     @SuppressWarnings("InfiniteLoopStatement") --> select_Menu(); method can make be while statement will stop.
     so No Matter while statement will infinite.
      */
+
+    public static String FILEPATH = ".\\sampleData.csv";
+
     @SuppressWarnings("InfiniteLoopStatement")
     public static void start_System() {
         while (true) {

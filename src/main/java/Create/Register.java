@@ -1,5 +1,7 @@
 package Create;
 
+import GroupC.SystemUi;
+
 import java.io.*;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -51,12 +53,12 @@ public class Register {
                 String registerKey = sc.nextLine();
                 close(registerKey);
                 if (registerKey.equals("Y")) {
-                    String filename = "C:\\Users\\sn\\Desktop\\Sample\\Sample.csv";
+                    String filename = SystemUi.FILEPATH;
                     BufferedReader br = null;
                     try {
                         br = new BufferedReader(new FileReader(filename));
                     } catch (FileNotFoundException e) {
-                        throw new RuntimeException(e);
+                        System.out.println(e.getMessage());
                     }
 
                     a:
@@ -65,7 +67,7 @@ public class Register {
                         try {
                             while (true) {
                                 if (br.readLine() == null) {
-                                    bw = new BufferedWriter(new FileWriter(filename, true));
+                                    bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename, true), "Shift_JIS"));
                                     bw.append(productId + ","
                                             + productCode + ","
                                             + productName + ","
@@ -284,7 +286,7 @@ public class Register {
     }
 
     private static boolean isOverlap(String target, int index) {
-        String filename = "C:\\Users\\sn\\Desktop\\Sample\\Sample.csv";
+        String filename = SystemUi.FILEPATH;
         BufferedReader br = null;
         try {
             br = new BufferedReader(new FileReader(filename));

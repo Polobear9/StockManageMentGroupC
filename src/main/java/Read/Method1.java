@@ -1,8 +1,8 @@
 package Read;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import GroupC.SystemUi;
+
+import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Pattern;
@@ -22,9 +22,9 @@ public class Method1 {
             Scanner sc = new Scanner(System.in);
             String keyword = sc.nextLine();
 
-            String file = "/Users/harukiohta/Desktop/Myjava/test/test2.csv";
+            String file = SystemUi.FILEPATH;
             try {
-                BufferedReader bufferedReader = new BufferedReader(new FileReader(file));//１行読み込み
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream((SystemUi.FILEPATH)), "Shift_JIS"));//１行読み込み
                 String line;
                 while ((line = bufferedReader.readLine()) != null) {
                     list = line.split(",");
@@ -33,6 +33,7 @@ public class Method1 {
                             name = list[2];
                     if (b(keyword, 0)) {
                         System.out.println(Arrays.toString(list));
+                        /*list = null;*/
                     } else if (b(keyword, 1)) {
                         System.out.println(Arrays.toString(list));
                     } else if (b(keyword, 2)) {

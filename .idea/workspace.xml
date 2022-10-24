@@ -9,18 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the code and Delete the Delete_All.java file.">
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GroupC/resources/Input.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StockManageMentGroupC_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/StockManageMentGroupC_jar.xml" afterDir="false" />
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Add the csvFile.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GroupC/resources/sampleData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Create/Create.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sampleData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sampleData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Create/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Create/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Read/Method1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Read/Method1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Read/Read.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,17 +54,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lieam/Documents&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Projects/StockManageMentGroupC/src/main/java/GroupC/resources",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\StockManageMentGroupC\src\main\java\GroupC\resources" />
       <recent name="C:\Users\lieam\Documents" />
       <recent name="C:\Projects\StockManageMentGroupC" />
       <recent name="C:\Projects\StockManageMentGroupC\src\test\java" />
@@ -286,7 +284,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666509459773</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Clean up te code.">
+      <created>1666586501484</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1666586501485</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add the csvFile.">
+      <created>1666586595814</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666586595814</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,7 +313,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make a File for project" />
     <MESSAGE value="Add All CRUD File and Folder." />
     <MESSAGE value="Create the Test Folder and Test Files." />
     <MESSAGE value="Add the menu" />
@@ -325,6 +336,8 @@
     <MESSAGE value="Change delete method." />
     <MESSAGE value="Finish Delete Method." />
     <MESSAGE value="Change the code and Delete the Delete_All.java file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change the code and Delete the Delete_All.java file." />
+    <MESSAGE value="Clean up te code." />
+    <MESSAGE value="Add the csvFile." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the csvFile." />
   </component>
 </project>
