@@ -72,9 +72,9 @@ public class Register {
 					}
 					System.out.println("続けて商品を登録しますか？");
 					System.out.print("1:続けて登録する 2:メニューへ戻る > ");
-					String menuNumber = sc.nextLine();
-					terminate(menuNumber);
-					if (menuNumber.equals("1") || menuNumber.equals("１")) {
+					String printDelete_MenuNumber = sc.nextLine();
+					terminate(printDelete_MenuNumber);
+					if (printDelete_MenuNumber.equals("1") || printDelete_MenuNumber.equals("１")) {
 						continue A;
 					} else {
 						break A;

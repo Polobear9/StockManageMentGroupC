@@ -10,12 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the code be simple and Clean">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StockManageMentGroupC_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/StockManageMentGroupC_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sampleData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sampleData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Create/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Create/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Read/Method1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Read/Method1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Update/FileChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Update/FileChange.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,7 @@
       <recent name="C:\Projects\StockManageMentGroupC" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR Application.StockManageMentGroupC.jar">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GroupC.Main" />
       <module name="StockManageMentGroupC.main" />
@@ -304,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666589394715</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Change the code be simple and Clean">
+      <created>1666595046049</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666595046049</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

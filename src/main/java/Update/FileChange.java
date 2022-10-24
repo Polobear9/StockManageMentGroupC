@@ -1,3 +1,4 @@
+package Update;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -36,7 +37,7 @@ public class FileChange {
 		FileChange.character_code = character_code;
 	}
 
-	void change() {
+	public void change() {
 
 		Selection.add(Option.SHOHIN_ID);
 		Selection.add(Option.SHOHIN_CODE);

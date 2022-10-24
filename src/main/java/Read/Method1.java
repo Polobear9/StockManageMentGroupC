@@ -20,7 +20,7 @@ public class Method1 {
             System.out.println("検索キーワードを入力してください。");
             System.out.println("キーワード＞");
             Scanner sc = new Scanner(System.in);
-            String keyword = sc.nextLine();
+            String delete_Keyword = sc.nextLine();
 
             String file = SystemUi.FILEPATH;
             //String fileはFileReaderの引数
@@ -34,13 +34,13 @@ public class Method1 {
                     String id = list[0],
                             code = list[1],
                             name = list[2];
-                    //keywordと配列の要素を比較して真の場合、listを表示する
-                    if (b(keyword, 0)) {
+                    //delete_Keywordと配列の要素を比較して真の場合、listを表示する
+                    if (b(delete_Keyword, 0)) {
                         //if文の条件式は最下部のboolean型bメソッド
                         System.out.println(Arrays.toString(list));
-                    } else if (b(keyword, 1)) {
+                    } else if (b(delete_Keyword, 1)) {
                         System.out.println(Arrays.toString(list));
-                    } else if (b(keyword, 2)) {
+                    } else if (b(delete_Keyword, 2)) {
                         System.out.println(Arrays.toString(list));
                     }
                 }
@@ -49,9 +49,9 @@ public class Method1 {
             }
             System.out.println("続けて商品を検索しますか？");
             System.out.println("1:続けて検索する　2:メニューへ戻る　＞");
-            String menuNumber = sc.nextLine();
-            //menuNumberの入力時、全角半角を区別しない。
-            if (menuNumber.equals("1") || menuNumber.equals("１")) {
+            String printDelete_MenuNumber = sc.nextLine();
+            //printDelete_MenuNumberの入力時、全角半角を区別しない。
+            if (printDelete_MenuNumber.equals("1") || printDelete_MenuNumber.equals("１")) {
                 continue;
             } else {
                 break;
@@ -61,8 +61,8 @@ public class Method1 {
 
     //キーワードの前後の文字列は考慮しない
     //正規表現
-    private static boolean b(String keyword, int i) {
-        Pattern p = Pattern.compile(".{0,}" + keyword + ".{0,}");
+    private static boolean b(String delete_Keyword, int i) {
+        Pattern p = Pattern.compile(".{0,}" + delete_Keyword + ".{0,}");
         return p.matcher(list[i]).matches();
     }
 }
