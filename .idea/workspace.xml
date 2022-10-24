@@ -9,11 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="AddCode for delete Data info.">
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the code, all code be japanese.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sampleData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sampleData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Update/Update.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666614709194</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Change the code, all code be japanese.">
+      <created>1666621141708</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1666621141708</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -337,7 +346,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add the menu" />
     <MESSAGE value="Add the menu for Delete Class." />
     <MESSAGE value="Change the Delete file." />
     <MESSAGE value="Change the Option." />
@@ -362,6 +370,7 @@
     <MESSAGE value="Change the code be simple and Clean" />
     <MESSAGE value="Change the code." />
     <MESSAGE value="(Change , Add)the code will change and comment Added." />
-    <option name="LAST_COMMIT_MESSAGE" value="(Change , Add)the code will change and comment Added." />
+    <MESSAGE value="Change the code, all code be japanese." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the code, all code be japanese." />
   </component>
 </project>

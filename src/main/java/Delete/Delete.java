@@ -16,8 +16,8 @@ public class Delete {
 
     public static void delete() {
         while (printDelete_Menu_Status) {
+            printMenu();
             Scanner sc = new Scanner(System.in);
-            printDelete_Menu();
             String delete_Keyword = sc.nextLine();
             delete_ById(delete_Keyword);
             printDelete_Menu_Status = choose_Continue();
@@ -33,14 +33,12 @@ public class Delete {
         return judge;
     }
 
-    private static void printDelete_Menu() {
-        System.out.println(" -------------------------------- ");
-        System.out.println("商品情報を削除します。");
-        System.out.println("削除する商品IDを入力してください。");
-        System.out.println(" -------------------------------- ");
-    }
-
     private static void delete_ById(String delete_Keyword) {
         DeleteById.search_By_Id(delete_Keyword);
+    }
+
+    private static void printMenu(){
+        System.out.println("商品情報を削除します。");
+        System.out.println("削除する商品IDを入力してください。");
     }
 }

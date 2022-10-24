@@ -33,7 +33,9 @@ public class DeleteById {
                 }
                 saveDataRepository.add(csvLineData); //Another data insert into saveDataRepository for Write in csv file.
             }
+            System.out.println("---------------------------");
             printDelete_Data();
+            System.out.println("---------------------------");
             select_DeleteTheData(br);
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -104,15 +106,20 @@ public class DeleteById {
     }
 
     private static void select_DeleteTheData(BufferedReader br) {
-        if (isDataInIt) {
-            System.out.print("商品情報を削除しますか？ Y/N >");
-            String answer_Check = sc.nextLine();
-            if (answer_Check.equals("Y")) {
-                csvLineData_Write(br);
-                System.out.println("商品を削除しました。");
-                clearRepository();
-            } else {
-                clearRepository();
+        while (true) {
+            if (isDataInIt) {
+                System.out.print("商品情報を削除しますか？ Y/N >");
+                String answer_Check = sc.nextLine();
+                if (answer_Check.equals("Y")) {
+                    csvLineData_Write(br);
+                    System.out.println("商品を削除しました。");
+                    break;
+                } else if (answer_Check.equals("N")) {
+                    System.out.println("商品削除をキャンセルしました。");
+                    break;
+                } else {
+                    System.out.println("もう一度入力してください。");
+                }
             }
         }
         clearRepository();
