@@ -58,44 +58,11 @@ public class Register {
 				while (true) {
 					System.out.print("登録しますか？ Y/N > ");
 					String registerKey = sc.nextLine();
-					close(registerKey);
+					terminate(registerKey);
 					if (registerKey.equals("Y")) {
 						String filename = SystemUi.FILEPATH;
 						BufferedReader br = null;
-						try {
-							br = new BufferedReader(new FileReader(filename));
-						} catch (FileNotFoundException e) {
-							System.out.println(e.getMessage());
-						}
-
-						a:while (true) {
-								BufferedWriter bw = null;
-								try {
-									while (true) {
-										if (br.readLine() == null) {
-											bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename, true), "Shift_JIS"));
-											bw.append(productId + ","
-													+ productCode + ","
-													+ productName + ","
-													+ produCategory + ","
-													+ sellingPrice + ","
-													+ purchasePrice + ","
-													+ registrationDate);
-											bw.newLine();
-											bw.close();
-											break a;
-										}
-									}
-								} catch (IOException e) {
-									System.out.println(e.getMessage());
-								}
-							}
-						try {
-							br.close();
-						} catch (IOException e) {
-							System.out.println(e.getMessage());
-						}
-						System.out.println("商品を登録しました。");
+						singUp(filename, br);
 						displayRegistrationInformation();
 					} else if (registerKey.equals("N")) {
 						System.out.println("商品登録をキャンセルしました。");
@@ -106,7 +73,7 @@ public class Register {
 					System.out.println("続けて商品を登録しますか？");
 					System.out.print("1:続けて登録する 2:メニューへ戻る > ");
 					String menuNumber = sc.nextLine();
-					close(menuNumber);
+					terminate(menuNumber);
 					if (menuNumber.equals("1") || menuNumber.equals("１")) {
 						continue A;
 					} else {
@@ -116,11 +83,48 @@ public class Register {
 			}
 	}
 
+	private static void singUp(String filename, BufferedReader br) {
+		try {
+			br = new BufferedReader(new FileReader(filename));
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getMessage());
+		}
+
+		a:while (true) {
+				BufferedWriter bw = null;
+				try {
+					while (true) {
+						if (br.readLine() == null) {
+							bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename, true), "Shift_JIS"));
+							bw.append(productId + ","
+									+ productCode + ","
+									+ productName + ","
+									+ produCategory + ","
+									+ sellingPrice + ","
+									+ purchasePrice + ","
+									+ registrationDate);
+							bw.newLine();
+							bw.close();
+							break a;
+						}
+					}
+				} catch (IOException e) {
+					System.out.println(e.getMessage());
+				}
+			}
+		try {
+			br.close();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		System.out.println("商品を登録しました。");
+	}
+
 	private static void registrationDate(Scanner sc) {
 		while (true) {
 			System.out.print("登録日 > ");
 			registrationDate = sc.nextLine();
-			close(registrationDate);
+			terminate(registrationDate);
 			if (registrationDate.contains(",")) {
 				System.out.println("カンマは使用できません。");
 				continue;
@@ -141,7 +145,7 @@ public class Register {
 		while (true) {
 			System.out.print("仕入れ単価 > ");
 			purchasePrice = sc.nextLine();
-			close(purchasePrice);
+			terminate(purchasePrice);
 			if (purchasePrice.contains(",")) {
 				System.out.println("カンマは使用できません。");
 				continue;
@@ -162,7 +166,7 @@ public class Register {
 		while (true) {
 			System.out.print("販売単価 > ");
 			sellingPrice = sc.nextLine();
-			close(sellingPrice);
+			terminate(sellingPrice);
 			if (sellingPrice.contains(",")) {
 				System.out.println("カンマは使用できません。");
 				continue;
@@ -183,7 +187,7 @@ public class Register {
 		while (true) {
 			System.out.print("商品分類 > ");
 			produCategory = sc.nextLine();
-			close(produCategory);
+			terminate(produCategory);
 			if (produCategory.contains(",")) {
 				System.out.println("カンマは使用できません。");
 				continue;
@@ -208,7 +212,7 @@ public class Register {
 		while (true) {
 			System.out.print("商品名 > ");
 			productName = sc.nextLine();
-			close(productName);
+			terminate(productName);
 			if (productName.contains(",")) {
 				System.out.println("カンマは使用できません。");
 				continue;
@@ -233,7 +237,7 @@ public class Register {
 		while (true) {
 			System.out.print("商品コード > ");
 			productCode = sc.nextLine();
-			close(productCode);
+			terminate(productCode);
 			if (productCode.contains(",")) {
 				System.out.println("カンマは使用できません。");
 				continue;
@@ -258,7 +262,7 @@ public class Register {
 		while (true) {
 			System.out.print("商品ID > ");
 			productId = sc.nextLine();
-			close(productId);
+			terminate(productId);
 			if (productId.contains(",")) {
 				System.out.println("カンマは使用できません。");
 				continue;
@@ -289,7 +293,7 @@ public class Register {
 		System.out.println("登録日 = " + registrationDate);
 	}
 
-	public static void close(String target) {
+	public static void terminate(String target) {
 		if (target.equals("\\q") || target.equals("exit")) {
 			System.out.println("プログラムを終了します");
 			System.exit(0);
