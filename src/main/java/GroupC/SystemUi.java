@@ -3,6 +3,7 @@ package GroupC;
 import Create.Register;
 import Delete.Delete;
 import Read.Method1;
+import Update.FileChange;
 
 import java.util.Scanner;
 
@@ -41,7 +42,8 @@ public class SystemUi {
                 break;
             case "3": //Change --> menu_Number == "3";
                 System.out.println("Change Menu");
-
+                FileChange fileChange = new FileChange(SystemUi.FILEPATH, "Shift_JIS");
+                fileChange.change();
                 break;
             case "4": //Delete --> menu_Number == "4";
                 System.out.println("Delete Menu");

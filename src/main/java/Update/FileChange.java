@@ -1,3 +1,4 @@
+package Update;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -36,7 +37,7 @@ public class FileChange {
 		FileChange.character_code = character_code;
 	}
 
-	void change() {
+	public void change() {
 
 		Selection.add(Option.SHOHIN_ID);
 		Selection.add(Option.SHOHIN_CODE);
@@ -158,13 +159,7 @@ public class FileChange {
 				if (halfwidth_check(getName())) {input_check() ; return ;}
 				if (byt_limit_check(getName(), getByt())) {input_check() ; return ;}
 				if (code_check()) {input_check() ; return ;}
-				try {
-					inputs_inFile[Selection.indexOf(SHOHIN_CODE)] = input;
-				} catch (Exception e) {
-					// TODO: handle exception
-				}
-					
-				
+				inputs_inFile[Selection.indexOf(SHOHIN_CODE)] = input;
 				selection_number++;
 			}
 		},
