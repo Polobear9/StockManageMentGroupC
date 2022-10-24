@@ -1,4 +1,3 @@
-package Update;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -37,7 +36,7 @@ public class FileChange {
 		FileChange.character_code = character_code;
 	}
 
-	public void change() {
+	void change() {
 
 		Selection.add(Option.SHOHIN_ID);
 		Selection.add(Option.SHOHIN_CODE);
@@ -84,7 +83,6 @@ public class FileChange {
 				System.out.print("商品情報を変更しますか？ Y/N > ");
 				input = scanner.nextLine();
 				if (back()) {return;}
-				if (sel()) {return;}
 				if (input.equals("Y")) {
 					System.out.println("商品情報を登録しました。");
 					for (int i = 0; i < inputs_inFile.length; i++) {
@@ -154,12 +152,17 @@ public class FileChange {
 				System.out.print(getName() + "[" + inputs_inFile[Selection.indexOf(SHOHIN_CODE)] + "] > ");
 				input = scanner.nextLine();
 				if (input.isEmpty()) {selection_number++; return ;}
-				if(sel()) {return ;}
 				if(back()) {return ;}
 				if (halfwidth_check(getName())) {input_check() ; return ;}
 				if (byt_limit_check(getName(), getByt())) {input_check() ; return ;}
 				if (code_check()) {input_check() ; return ;}
-				inputs_inFile[Selection.indexOf(SHOHIN_CODE)] = input;
+				try {
+					inputs_inFile[Selection.indexOf(SHOHIN_CODE)] = input;
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+					
+				
 				selection_number++;
 			}
 		},
@@ -169,7 +172,6 @@ public class FileChange {
 				System.out.print(getName() + "[" + inputs_inFile[Selection.indexOf(SHOHIN_MEI)] + "] > ");
 				input = scanner.nextLine();
 				if (input.isEmpty()) {selection_number++; return ;}
-				if(sel()) {return ;}
 				if(back()) {return ;}
 				if (bytee_limit_check(getName(), getByt())) {input_check() ; return ;}
 				inputs_inFile[Selection.indexOf(SHOHIN_MEI)] = input;
@@ -182,7 +184,6 @@ public class FileChange {
 				System.out.print(getName() + "[" + inputs_inFile[Selection.indexOf(SHOHIN_BUNRUI)] + "] > ");
 				input = scanner.nextLine();
 				if (input.isEmpty()) {selection_number++; return ;}
-				if(sel()) {return ;}
 				if(back()) {return ;}
 				if (bytee_limit_check(getName(), getByt())) {input_check() ; return ;}
 				inputs_inFile[Selection.indexOf(SHOHIN_BUNRUI)] = input;
@@ -195,13 +196,11 @@ public class FileChange {
 				System.out.print(getName() + "[" + inputs_inFile[Selection.indexOf(HANBAI_TANKA)] + "] > ");
 				input = scanner.nextLine();
 				if (input.isEmpty()) {selection_number++; return ;}
-				if(sel()) {return ;}
 				if(back()) {return ;}
 				if (halfwidth_check(getName())) {input_check() ; return ;}
 				if (byt_up_limit_check(getName(), getByt())) {input_check() ; return ;}
 				inputs_inFile[Selection.indexOf(HANBAI_TANKA)] = input;
 				selection_number++;
-
 			}
 		},
 		SHIIRE_TANKA("仕入単価", 8) {
@@ -210,7 +209,6 @@ public class FileChange {
 				System.out.print(getName() + "[" + inputs_inFile[Selection.indexOf(SHIIRE_TANKA)] + "] > ");
 				input = scanner.nextLine();
 				if (input.isEmpty()) {selection_number++; return ;}
-				if(sel()) {return ;}
 				if(back()) {return ;}
 				if (halfwidth_check(getName())) {input_check() ; return ;}
 				if (byt_up_limit_check(getName(), getByt())) {input_check() ; return ;}
@@ -224,7 +222,6 @@ public class FileChange {
 				System.out.print(getName() + "[" + inputs_inFile[Selection.indexOf(TOROKUBI)] + "] > ");
 				input = scanner.nextLine();
 				if (input.isEmpty()) {selection_number++; return;}
-				if(sel()) {return ;}
 				if(back()) {return ;}
 				if (halfwidth_check(getName())) {input_check(); return;}
 				if (byt_limit_check(getName(), getByt())) {input_check(); return ;}
@@ -320,24 +317,6 @@ public class FileChange {
 		private static boolean back() {
 			if (input.equals("-")) {
 				selection_number--;
-				return true;
-			}
-			return false;
-		}
-
-		private static boolean sel() {
-			if (input.equals("sel")) {
-				for (int i = 0; i < Selection.size(); i++) {
-					System.out.println(i + " : " + Selection.get(i).getName());
-				}
-				System.out.print("番号を入力してください > ");
-				input = scanner.nextLine();
-				halfwidth_check("選択番号");
-				selection_number = Integer.parseInt(input);
-				if (selection_number <= 0 || end_number <= selection_number) {
-					System.out.println("番号は 0 から " + end_number + " の間を選んでください");
-					return sel();
-				}
 				return true;
 			}
 			return false;
