@@ -17,9 +17,11 @@ public class Delete {
     public static void delete() {
         while (printDelete_Menu_Status) {
             printMenu();
-            Scanner sc = new Scanner(System.in);
-            String delete_Keyword = sc.nextLine();
-            delete_ById(delete_Keyword);
+            while(DeleteById.keywordInputAgain) {
+                Scanner sc = new Scanner(System.in);
+                String delete_Keyword = sc.nextLine();
+                delete_ById(delete_Keyword);
+            }
             printDelete_Menu_Status = choose_Continue();
         }
         printDelete_Menu_Status = true; // make a printDelete_Menu_status value --> true for next Time.
@@ -29,6 +31,9 @@ public class Delete {
         Scanner sc = new Scanner(System.in);
         System.out.print("1:続けて削除する 2:メニューに戻る > ");
         String select = sc.nextLine();
+        if(select.equals("1")){
+            DeleteById.keywordInputAgain = true;
+        }
         boolean judge = !select.equals("2");
         return judge;
     }
