@@ -22,7 +22,7 @@ public class Register {
 	//商品名
 	private static String productName;
 	//商品分類
-	private static String produCategory;
+	private static String productCategory;
 	//販売単価
 	private static String sellingPrice;
 	//仕入単価
@@ -47,7 +47,7 @@ public class Register {
 				//商品名登録
 				productName(sc);
 				//商品分類登録
-				produCategory(sc);
+				productCategory(sc);
 				//販売単価登録
 				sellingPrice(sc);
 				//仕入れ単価登録
@@ -99,7 +99,7 @@ public class Register {
 							bw.append(productId + ","
 									+ productCode + ","
 									+ productName + ","
-									+ produCategory + ","
+									+ productCategory + ","
 									+ sellingPrice + ","
 									+ purchasePrice + ","
 									+ registrationDate);
@@ -183,21 +183,21 @@ public class Register {
 		}
 	}
 
-	private static void produCategory(Scanner sc) {
+	private static void productCategory(Scanner sc) {
 		while (true) {
 			System.out.print("商品分類 > ");
-			produCategory = sc.nextLine();
-			terminate(produCategory);
-			if (produCategory.contains(",")) {
+			productCategory = sc.nextLine();
+			terminate(productCategory);
+			if (productCategory.contains(",")) {
 				System.out.println("カンマは使用できません。");
 				continue;
 			}
-			if (!isRight(".+", produCategory)) {
+			if (!isRight(".+", productCategory)) {
 				System.out.println("商品分類を入力してください。");
 				continue;
 			}
 			try {
-				if (produCategory.getBytes("Shift-JIS").length > 100) {
+				if (productCategory.getBytes("Shift-JIS").length > 100) {
 					System.out.println("商品分類は１００バイト（全角５０文字）以下で入力してください。");
 					continue;
 				}
@@ -287,12 +287,20 @@ public class Register {
 		System.out.println("商品ID = " + productId);
 		System.out.println("商品コード = " + productCode);
 		System.out.println("商品名 = " + productName);
-		System.out.println("商品分類 = " + produCategory);
+		System.out.println("商品分類 = " + productCategory);
 		System.out.println("販売単価 = " + sellingPrice);
 		System.out.println("仕入単価 = " + purchasePrice);
 		System.out.println("登録日 = " + registrationDate);
 	}
 
+	/**
+	 * this method use for user input is not q or exit.
+	 * if user input is "q" or "exit" the system will stop.
+	 *
+	 * @param target
+	 *         The object to compare this {@code String} against
+	 *
+	 */
 	public static void terminate(String target) {
 		if (target.equals("\\q") || target.equals("exit")) {
 			System.out.println("プログラムを終了します");
@@ -307,7 +315,7 @@ public class Register {
 		try {
 			br = new BufferedReader(new FileReader(filename));
 			while (true) {
-				String[] file = br.readLine().split(",");
+				String[] file = br.readLine().split(",",-1);
 				if (file[index].equals(target)) {
 					return true;
 				}

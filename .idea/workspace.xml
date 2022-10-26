@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change code and make a method system out be japanese.">
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="change the code, be more powerful.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sampleData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sampleData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete/Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Create/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Create/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +90,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.StockManageMentGroupC.jar" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JAR Application.StockManageMentGroupC.jar" />
         <item itemvalue="Application.Main" />
       </list>
@@ -336,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666622542077</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="change the code, be more powerful.">
+      <created>1666700184765</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1666700184767</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -351,7 +359,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change the Delete file." />
     <MESSAGE value="Change the Option." />
     <MESSAGE value="Add the detail method All data , ID, Name , number." />
     <MESSAGE value="Add the comment for explain how this class be work." />
@@ -376,17 +383,7 @@
     <MESSAGE value="(Change , Add)the code will change and comment Added." />
     <MESSAGE value="Change the code, all code be japanese." />
     <MESSAGE value="Change code and make a method system out be japanese." />
-    <option name="LAST_COMMIT_MESSAGE" value="Change code and make a method system out be japanese." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="change the code, be more powerful." />
+    <option name="LAST_COMMIT_MESSAGE" value="change the code, be more powerful." />
   </component>
 </project>
