@@ -17,21 +17,16 @@ public class SystemUi {
 
 
     public static String FILEPATH = ".\\ProductManagement_Java_0049_C.csv";
-    BufferedWriter bw;
 
-    {
-        try {
-            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(FILEPATH, true), "Shift_JIS"));
-        } catch (UnsupportedEncodingException e) {
-            throw new RuntimeException(e);
-        } catch (FileNotFoundException e) {
-            File file = new File(FILEPATH);
-            if (!file.exists()) {
-                try {
-                    file.createNewFile();
-                } catch (IOException ex) {
-                    throw new RuntimeException(ex);
-                }
+    SystemUi() {
+        java.io.File file = new java.io.File(FILEPATH);
+        System.out.println(file.exists());
+        if (!file.exists()) {
+            try {
+                System.out.println("ファイルが存在しないため新しいファイルを作成しました。");
+                file.createNewFile();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
         }
     }
