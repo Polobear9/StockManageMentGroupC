@@ -5,6 +5,7 @@ import Delete.Delete;
 import Read.Method1;
 import Update.FileChange;
 
+import java.io.*;
 import java.util.Scanner;
 
 public class SystemUi {
@@ -14,7 +15,26 @@ public class SystemUi {
     so No Matter while statement will infinite.
      */
 
+
     public static String FILEPATH = ".\\sampleData.csv";
+    BufferedWriter bw;
+
+    {
+        try {
+            bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(FILEPATH, true), "Shift_JIS"));
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        } catch (FileNotFoundException e) {
+            File file = new File(FILEPATH);
+            if (!file.exists()) {
+                try {
+                    file.createNewFile();
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
+            }
+        }
+    }
 
     @SuppressWarnings("InfiniteLoopStatement")
     public static void start_System() {

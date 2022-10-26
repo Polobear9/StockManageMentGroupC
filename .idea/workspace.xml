@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="change the code, be more powerful.">
+    <list default="true" id="b3d878dc-2eac-4962-92d9-a0402cced284" name="Changes" comment="Change the code.">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StockManageMentGroupC_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/StockManageMentGroupC_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sampleData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sampleData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Create/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Create/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GroupC/SystemUi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,15 +49,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/StockManageMentGroupC/src/main/java/GroupC/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Projects/StockManageMentGroupC/sampleData.csv",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\StockManageMentGroupC\src\main\java\GroupC\resources" />
@@ -70,7 +70,7 @@
       <recent name="C:\Projects\StockManageMentGroupC" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JAR Application.StockManageMentGroupC.jar">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GroupC.Main" />
       <module name="StockManageMentGroupC.main" />
@@ -344,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666700184767</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Change the code.">
+      <created>1666755999285</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1666755999285</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,11 +386,22 @@
     <MESSAGE value="Clean up te code." />
     <MESSAGE value="Add the csvFile." />
     <MESSAGE value="Change the code be simple and Clean" />
-    <MESSAGE value="Change the code." />
     <MESSAGE value="(Change , Add)the code will change and comment Added." />
     <MESSAGE value="Change the code, all code be japanese." />
     <MESSAGE value="Change code and make a method system out be japanese." />
     <MESSAGE value="change the code, be more powerful." />
-    <option name="LAST_COMMIT_MESSAGE" value="change the code, be more powerful." />
+    <MESSAGE value="Change the code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the code." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Delete_System/DeleteById.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
